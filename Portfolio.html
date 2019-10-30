@@ -3,7 +3,13 @@
 <head>
         <link rel="stylesheet" href="mystyle.css">
         <link rel="stylesheet"type="text/css"href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"/>
-         
+        <style type="text/css"> 
+          .center {
+              display: block;
+              margin-left: auto;
+              margin-right: auto;  
+            }
+        </style> 
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-5">
@@ -13,21 +19,21 @@
                       <a class="nav-link"href="#">Home</a>
                     </li>
                     <li class="nav-item"> 
-                        <a class="nav-link"href="#">About</a>
+                        <a class="nav-link"href="#AboutInfo">About</a>
                       </li>
                     <li class="nav-item">
                       <a class="nav-link"href="Resume.html">Resume</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"href="#">Projects</a>
+                        <a class="nav-link"href="#ProjectInfo">Projects</a>
                       </li>
                     <li class="nav-item">
-                      <a class="nav-link"href="#">Contact</a>
+                       <a class="nav-link"href="#ContactInfo">Contact</a> 
                     </li>
                   </ul>
                 </div>
 </nav>
-<section>  
+<section id = "AboutInfo">  
       <div class="row" style="margin-left: 15%;margin-right: 15%;margin-top: 10%" >
           <div class="column"><img src="ProfilePic.jpg" width="400" height="400"></div>
           <div class="column" style="border: 3px solid orange;margin-top: 5%;margin-bottom: 5%">
@@ -37,19 +43,23 @@
         </div>
 </section>  
 
-<section style="margin-top: 7%">
+<section style="margin-top: 7%" id = "ProjectInfo">
     <div style="border: 3px solid darkgreen ; margin-left: 10%;margin-right: 10%">
-        <header style="background-color:orange;opacity:0.7"><strong>Projects :</strong></header>
-        <header><strong>String Pattern Matching</strong>,Apr. 2019 - June 2019</header>
+        <header style="background-color:orange;opacity:0.7;text-align: center"><strong>Projects</strong></header>
+        <header><a href="https://github.com/AmeeSankhesara/StringPatternMatching"><strong>String Pattern Matching</strong></a>,Apr. 2019 - June 2019</header>
         Done research on different string pattern matching algorithms like Brute force approach, Knuth Morris Pratt, Rabin Karp algorithm, etc. Done analysis of these algorithms with different test cases and created a report of analysis that which algorithm is best in which situation. I have done this project in JAVA.
+        <br>
+        <img class="center" src="PatternSearching.png" width="350" height="300" >
         <br><br>
-        <header><strong>2048 game</strong>,Apr. 2019 - June 2019</header>
+        <header><a href="https://github.com/AmeeSankhesara/2048-With-AI"><strong>2048 game</strong></a>,Apr. 2019 - June 2019</header>
         Implemented minimax algorithm with alpha-beta pruning and without alpha-beta pruning and Expectimax algorithm in Python for 2048 game. And also done performance analysis of all algorithms.
+        <br>
+        <img class="center" src="2048.png" width="350" height="350" >
         <br>
       </div>
 </section>
 
-<section>
+<section id = "ContactInfo">
 <footer style="border: 3px solid gray;margin-left: 10%;margin-right: 10%;margin-top: 7%">
       <form style="margin-top: 5%;margin-bottom:5%;margin-left:5%;margin-right:5%;text-align: center">
               <strong>Contact details </strong> <br><br>

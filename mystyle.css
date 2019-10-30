@@ -11,20 +11,20 @@ body {
     font-weight: 700;
 }
 
-.row:after {
+.row:after 
+{
     content: "";
     display: table;
     clear: both;
-  }
+}
 
-  .border
-  {
+.border
+{
       border-block-color: green;
-  }
+}
 
   .font
   {
       color:darkslategray;
       font-weight: 500;
-    
   }
