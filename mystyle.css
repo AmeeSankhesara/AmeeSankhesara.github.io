@@ -1,20 +1,16 @@
-body {
-    background-image: url("Background.jpg");
-}
-
 .column
 {
     float: left;
     width: 50%;
     text-align:middle;
-    font-family: Cambria;
-    font-weight: 700;
+    
 }
 
 .row:after 
 {
     content: "";
     display: table;
+    font-family: Cambria;
     clear: both;
 }
 
