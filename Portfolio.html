@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-        <!-- <link rel="stylesheet" href="mystyle.css"> -->
         <link rel="stylesheet"type="text/css"href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"/>
         <style type="text/css"> 
           .center {
@@ -37,14 +36,31 @@
                 font-weight: 500;
             }
 
-            .formStyle
+            .form
             {
-              margin-top: 5%;
-              margin-bottom:5%;
+               margin-top: 5%; 
+              /* margin-bottom:5%; */
               margin-left:5%;
               margin-right:5%;
               text-align: center;
               color: whitesmoke
+            }
+
+            .footer
+            {
+              bottom: 0;
+              width: 100%;
+              background-color: black;
+              color: white;
+              text-align: center;
+            }
+
+            .projectInfo
+            {
+              border: 3px solid black ;
+              margin-left: 10%;
+              margin-right: 10%;
+              background-color: wheat
             }
         </style> 
 </head>
@@ -86,7 +102,7 @@
 </section>  
 
 <section style="margin-top: 7%" id = "ProjectInfo">
-    <div style="border: 3px solid black ; margin-left: 10%;margin-right: 10%;background-color: wheat">
+    <div class="projectInfo">
         <header style="background-color:#654321;opacity:0.7;text-align: center;color: wheat"><strong>PROJECTS</strong></header>
         <header class="text-justify"><a href="https://github.com/AmeeSankhesara/StringPatternMatching"><strong>String Pattern Matching</strong></a>,Apr. 2019 - June 2019</header>
         <p class="text-justify">Done research on different string pattern matching algorithms like Brute force approach, Knuth Morris Pratt, Rabin Karp algorithm, etc. Done analysis of these algorithms with different test cases and created a report of analysis that which algorithm is best in which situation. I have done this project in JAVA.</p>
@@ -98,10 +114,9 @@
 </section>
 
 <section id = "ContactInfo">
-<footer style="border: 3px solid #808080;margin-left: 10%;margin-right: 10%;margin-top: 7%;background-color: black">
-      <form class="formStyle">
-        <p>
-            <strong>Contact details </strong> <br><br>
+  <footer class="footer"> 
+      <form class="form">
+            <strong>Contact Details </strong> <br><br>
               <strong> E-mail: </strong>
               <Input type="text" name="email">
               <input type="submit" value="Submit"> 
@@ -110,10 +125,8 @@
               <a href="https://www.linkedin.com/in/amee-sankhesara/"><img src="LinkedIn_logo.png" style="width:20px; height:20px"></a> &nbsp;&nbsp;
               <a href="https://github.com/AmeeSankhesara"><img src="GitLogo.png" style="width:25px; height:20px"></a> &nbsp;&nbsp;
               <a href="https://twitter.com/amisankhesara"><img src="Twitter_logo.png" style="width:22px; height:20px"></a>
-        </p>
-</form>
+   </form>
 </footer>
 </section>
-<br>
 </body>
 </html> 
