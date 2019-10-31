@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-        <link rel="stylesheet" href="mystyle.css">
+        <!-- <link rel="stylesheet" href="mystyle.css"> -->
         <link rel="stylesheet"type="text/css"href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"/>
         <style type="text/css"> 
           .center {
@@ -15,7 +15,37 @@
               margin-left: 1%;
               margin-right: 1%;
             }
+            .column
+            {
+                float: left;
+                width: 50%;
+                text-align:middle;
+                
+            }
 
+            .row:after 
+            {
+                content: "";
+                display: table;
+                font-family: Cambria;
+                clear: both;
+            }
+             
+            .font
+            {
+                color:darkslategray;
+                font-weight: 500;
+            }
+
+            .formStyle
+            {
+              margin-top: 5%;
+              margin-bottom:5%;
+              margin-left:5%;
+              margin-right:5%;
+              text-align: center;
+              color: whitesmoke
+            }
         </style> 
 </head>
 
@@ -68,9 +98,10 @@
 </section>
 
 <section id = "ContactInfo">
-<footer style="border: 3px solid gray;margin-left: 10%;margin-right: 10%;margin-top: 7%;background-color: black !important">
-      <form style="margin-top: 5%;margin-bottom:5%;margin-left:5%;margin-right:5%;text-align: center;color: whitesmoke">
-              <strong>Contact details </strong> <br><br>
+<footer style="border: 3px solid #808080;margin-left: 10%;margin-right: 10%;margin-top: 7%;background-color: black">
+      <form class="formStyle">
+        <p>
+            <strong>Contact details </strong> <br><br>
               <strong> E-mail: </strong>
               <Input type="text" name="email">
               <input type="submit" value="Submit"> 
@@ -79,8 +110,8 @@
               <a href="https://www.linkedin.com/in/amee-sankhesara/"><img src="LinkedIn_logo.png" style="width:20px; height:20px"></a> &nbsp;&nbsp;
               <a href="https://github.com/AmeeSankhesara"><img src="GitLogo.png" style="width:25px; height:20px"></a> &nbsp;&nbsp;
               <a href="https://twitter.com/amisankhesara"><img src="Twitter_logo.png" style="width:22px; height:20px"></a>
-      </form>
-    
+        </p>
+</form>
 </footer>
 </section>
 <br>
